@@ -1,0 +1,1 @@
+alert("Hi my first js file");
