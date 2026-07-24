@@ -6,3 +6,14 @@ console.log("Start");
  },1000)
  console.log("End");
  
+// Callback Function
+const callback = (arg) =>{
+console.log(arg);
+
+}
+const loadScript = (src,callback) => {
+ let Script = document.createElement("script")
+ Script.src = src;
+ sc.onload = callback("Asad")
+ document.head.append(sc)
+}
