@@ -20,6 +20,7 @@ console.log(arg);
 const loadScript = (src,callback) => {
  let Script = document.createElement("script")
  Script.src = src;
- sc.onload = callback("Asad")
- document.head.append(sc)
+ Script.onload = callback("Asad")
+ document.head.append(Script)
 }
+loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js",callback)
