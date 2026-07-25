@@ -15,12 +15,12 @@ const fn = () => {
 
 const callback = (arg) =>{
 console.log(arg);
-
+fn()
 }
 const loadScript = (src,callback) => {
  let Script = document.createElement("script")
  Script.src = src;
- Script.onload = callback("Asad")
+ Script.onload = callback("Asad",fn)
  document.head.append(Script)
 }
 loadScript("https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js",callback)
