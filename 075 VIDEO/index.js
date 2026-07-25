@@ -7,6 +7,12 @@ console.log("Start");
  console.log("End");
  
 // Callback Function
+
+const fn = () => {
+  console.log("console");
+  
+}
+
 const callback = (arg) =>{
 console.log(arg);
 
