@@ -15,4 +15,6 @@ let prom1 = new Promise((reslove,reject)=>{
 })
 prom1.then((a)=>{
     console.log(a);
+}).catch((err)=>{
+    console.log(err);
 })
