@@ -1,15 +1,25 @@
-function getData(){
+async function getData() {
     // Promise has Three states fulfilled , rejected , pending  
-return new Promise((resolve,reject)=>{
-setTimeout(()=>{
-    resolve(455)
-},3500)
-})
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(455)
+        }, 3500)
+    })
 }
-console.log("Loading Modules");
-console.log("another code");
-console.log("data Loading");
-let data = getData()
-console.log(data);
-console.log("process data");
-console.log();
+async function main() {
+    console.log("Loading Modules");
+    console.log("another code");
+    console.log("data Loading");
+    let data = await getData()
+    console.log(data);
+    console.log("process data 1");
+    console.log("process data 2");
+}
+
+// data.then((v)=>{
+//     console.log(data);
+//     console.log("process data 1" );
+//     console.log("process data 2");
+// })
+main()
+
