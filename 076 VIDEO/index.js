@@ -16,6 +16,10 @@ async function main() {
     console.log("Loading Modules");
     console.log("another code");
     console.log("data Loading");
+    // settle means resolve or reject
+    // resolve means promis has settled successfully
+    // reject means promis has not settled successfully
+
     let data = await getData()
     console.log(data);
     console.log("process data 1");
