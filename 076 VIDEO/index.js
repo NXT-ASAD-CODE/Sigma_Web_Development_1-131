@@ -7,7 +7,9 @@ async function getData() {
     })
 }
 async function FetchingData() {
-   let a = await fetch('https://jsonplaceholder.typicode.com/todos/1')
+   let a = await fetch('https://jsonplaceholder.typicode.com/todos/1',{
+    method:'POST' // We can use POST , DELETE , PUT , PULL and GET is by default
+   })
      let data = await a.json()
       .console.log(data);
       
